@@ -1,0 +1,37 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+body{background-color: #E5E5E5; font-family: 'Nunito Sans', sans-serif; text-align: center;}
+button{background-color: #C30303; color: #fff; border:none; padding: 1%; margin: 2%;}
+p{font-weight: 200;}
+h1, h2{font-weight: 700;}
+h1 span{font-weight: 200; display: block;}
+
+header{padding: 5% 0; line-height: 1.8em;}
+
+section{margin: 2% 0; padding:0;}
+
+.tense{display: inline-block; width: 100%;}
+.tense label{margin: 0 2%;}
+
+.sentence{}
+.sentence select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    background: auto;
+    background-image: none;
+    border: 1px solid #C30303;
+    padding: 1% 3%;
+}
+.sentence select::after {
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+
+.results{width: 90%; margin: 0 auto;}
+.results ul{width: 100%; margin:0 auto; list-style: none;}
+.results ul li{background-color: #C30303; color: #fff; max-width: 100%; border-radius: 7pt; margin: 2%; padding:2%;}
+
+.results .negative{background-color: #5f0404;}

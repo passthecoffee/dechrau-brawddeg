@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Nunito+Sans:opsz,wght@6..12,200;6..12,700&display=swap" rel="stylesheet">
+    <title>Dechrau Brawddeg Cymraeg</title>
+</head>
+<body>
+    <header>
+        <h1>Cymraeg<span>Sentence Creator</span></h1>
+    </header>
+    <main>
+        <form action="/action_page.php">
+            <section class="tense">
+                <label for="past"><input type="radio" id="past" name="category" value="past">Past</label>
+                <label for="present"><input type="radio" id="present" name="category" value="present">Present</label>
+                <label for="perfect"><input type="radio" id="perfect" name="category" value="perfect">Perfect</label>
+            </section>
+            <section class="sentence">
+                <label for="brawddeg">Select Sentece Pattern</label><br>
+                <select id="postDropdown" name="brawddeg">
+                    <option value="Sut">Sut Dych Chi? How are you?</option>
+                    <option value="Beth">Beth / What</option>
+                    <option value="Ble">Ble / Where</option>
+                    <option value="Pam">Pam / Why</option>
+                    <option value="Ga i">Ga i / Can I</option>
+                    <option value="Pryd">Pryd / When</option>
+                    <option value="which">Dunno / which</option>
+                </select>
+            </section>
+          </form>
+
+          <section class="results">
+            <ul id="postList"></ul>
+        </section>
+    </main>
+
+    <footer></footer>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
